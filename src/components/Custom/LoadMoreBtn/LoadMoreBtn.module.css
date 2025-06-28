@@ -1,0 +1,25 @@
+.loadMoreBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 5px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #b0b8c1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 333ms ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+
+
+    &:hover {
+        background-color: #9fa7b0;
+    }
+
+    &:active {
+        background-color: #8e96a0;
+    }
+}
