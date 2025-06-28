@@ -50,8 +50,11 @@ function App() {
           toast.error("Sorry, no more images found");
         }
       } catch (err: unknown) {
-        setErrMsg(err.message || "Something went wrong");
-        setError(true);
+        if (err instanceof Error) {
+          setErrMsg(err.message);
+        } else {
+          setErrMsg("Something went wrong");
+        }
       } finally {
         setLoading(false);
       }
